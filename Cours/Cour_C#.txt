@@ -1,0 +1,20 @@
+//Installation de virtual studio
+
+Aller dans le répertoire vs2017Layout et lancer la commande suivante:
+vs_Community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop
+
+//fonctionnement
+*CLM  chargeur de class ->compilation en code natif....
+*Apres compilation on option un assembly (dll ou exe) contairement a en JAVA ou on obtient un jar
+*using est l'equivant au import en java
+*namespace est l'equivant d'un package où vont etre ranger les class
+*Debeuguage F10(pas a pas principal) et F11 (pas a pas detaillé)
+*La conversion d'un int en string est tres couteux, Utilisation de tryParse permet d'initalise la variable a 0 si il reussi la conversion il renvoi un true et affecte la variable au nombre, sinon il renvoi seulement FALSE et la variable reste a 0.
+*readonly permet d'avoi des variable initialisé a la compilation
+*methode d'instance ne sappelle que lorsque l'on a instancer la class ( utilisation de new)
+*methode statique s'appelle snan avoir instancier la class
+*snipet permet de faire apparaitre la structure du code en utilisant tab tab
+* les try catch peuvent avoir plusieurs catch contrairement a java, on traite de l'exception la plecise à la plus général
+* le type enumeration est une sorte de tableau auquel on affacte une etiquette a une valeur
+la gestion de la memoire des type par valeur et par reference est different
+
