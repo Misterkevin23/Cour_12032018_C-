@@ -6,15 +6,24 @@ vs_Community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop
 //fonctionnement
 *CLM  chargeur de class ->compilation en code natif....
 *Apres compilation on option un assembly (dll ou exe) contairement a en JAVA ou on obtient un jar
+	-->Assembly est un fichier -> organisation physique 
 *using est l'equivant au import en java
 *namespace est l'equivant d'un package où vont etre ranger les class
+    	-->namespace -> organisation logique
 *Debeuguage F10(pas a pas principal) et F11 (pas a pas detaillé)
-*La conversion d'un int en string est tres couteux, Utilisation de tryParse permet d'initalise la variable a 0 si il reussi la conversion il renvoi un true et affecte la variable au nombre, sinon il renvoi seulement FALSE et la variable reste a 0.
+*La conversion d'un int en string est tres couteux, Utilisation de tryParse permet d'initalise la variable a 0 
+		si il reussi la conversion il renvoi un true et affecte la variable au nombre, 
+		sinon il renvoi seulement FALSE et la variable reste a 0.
 *readonly permet d'avoi des variable initialisé a la compilation
 *methode d'instance ne sappelle que lorsque l'on a instancer la class ( utilisation de new)
-*methode statique s'appelle snan avoir instancier la class
+*methode statique s'appelle sans avoir instancier la class
 *snipet permet de faire apparaitre la structure du code en utilisant tab tab
 * les try catch peuvent avoir plusieurs catch contrairement a java, on traite de l'exception la plecise à la plus général
-* le type enumeration est une sorte de tableau auquel on affacte une etiquette a une valeur
-la gestion de la memoire des type par valeur et par reference est different
+* le type enumeration est une sorte de tableau auquel on affecte une etiquette a une valeur
+*la gestion de la memoire des type par valeur et par reference est different
+*Initialiseur de classe possible que si on a un constructeur par default; on peut parametrer que les champs qui nous interessent(Voir TP5)
+*protected est une variable utilisable pour la classe parente et les classe herité mais pas à l'exterieur
+*une classe abstraite est une classse qui peut pas etre instenter directement et qui possede au moin une methode abstraite.
+*prop + tab tab permet de generer les geteur et seteur simple
+*propfull + tab tab permet de generer des geteur et seteur complet
 
