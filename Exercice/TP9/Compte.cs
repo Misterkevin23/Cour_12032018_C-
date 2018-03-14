@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP8
+namespace TP9
 {
     class Compte
     {
+
         #region Constructeur
         public Compte() : this(1, 2300)
         {
@@ -31,12 +32,12 @@ namespace TP8
 
         private double solde;
 
-       
+
 
         public double Solde
         {
             get { return solde; }
-            private set { solde = value; }
+            protected set { solde = value; }
         }
 
         public void ajouter(double unMontant)
@@ -46,7 +47,7 @@ namespace TP8
         #endregion
 
         #region Methode
-        public void retirer(double unMontant)
+        public virtual void retirer(double unMontant)
         {
             Solde -= unMontant;
         }
@@ -54,7 +55,7 @@ namespace TP8
 
         public override string ToString()
         {
-            return string.Format("Je suis  le compte numero {0}. Mon solde est de {0}", this.Numeros, this.Solde );
+            return string.Format("Je suis  le compte numero {0}. Mon solde est de {0}", this.Numeros, this.Solde);
         }
         #endregion
 

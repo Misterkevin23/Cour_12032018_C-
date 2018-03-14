@@ -3,6 +3,12 @@
 Aller dans le répertoire vs2017Layout et lancer la commande suivante:
 vs_Community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop
 
+//module bien à Installer
+devement .net
+developpement mobile en JS
+node JS
+developpement web
+
 //fonctionnement
 *CLM  chargeur de class ->compilation en code natif....
 *Apres compilation on option un assembly (dll ou exe) contairement a en JAVA ou on obtient un jar

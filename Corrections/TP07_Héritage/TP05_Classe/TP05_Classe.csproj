@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6050D5A0-C565-4158-ACDE-F7C912F6AFF8}</ProjectGuid>
+    <ProjectGuid>{B6DEAC7F-07E0-40C4-96D0-CB231D80140B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TP8</RootNamespace>
-    <AssemblyName>TP8</AssemblyName>
+    <RootNamespace>TP05_Classe</RootNamespace>
+    <AssemblyName>TP05_Classe</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
-    <Compile Include="Compte.cs" />
+    <Compile Include="Point2D.cs" />
+    <Compile Include="Point3D.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

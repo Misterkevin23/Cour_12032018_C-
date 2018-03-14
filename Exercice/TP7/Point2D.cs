@@ -20,14 +20,14 @@ namespace TP7
             count++;
         }
 
-        public int X { get; set; }
+        public int X { get; protected set; }
 
         private int y;
 
-        public int Y
+        public int Y // Champs en .Net équivalent à attribut en Java
         {
             get { return y; }
-            set { y = value; }
+            protected set { y = value; }
         }
 
         static int count = 0;

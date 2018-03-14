@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6050D5A0-C565-4158-ACDE-F7C912F6AFF8}</ProjectGuid>
+    <ProjectGuid>{E7A12B9F-4E90-4607-BAAF-0120C8A33D79}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TP8</RootNamespace>
-    <AssemblyName>TP8</AssemblyName>
+    <RootNamespace>Banque</RootNamespace>
+    <AssemblyName>Banque</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

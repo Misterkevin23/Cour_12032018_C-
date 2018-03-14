@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6050D5A0-C565-4158-ACDE-F7C912F6AFF8}</ProjectGuid>
+    <ProjectGuid>{B7F77C98-C9A5-4C43-819B-5E42CB0C589B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TP8</RootNamespace>
-    <AssemblyName>TP8</AssemblyName>
+    <RootNamespace>TP9</RootNamespace>
+    <AssemblyName>TP9</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Compte.cs" />
+    <Compile Include="CompteASeuil.cs" />
+    <Compile Include="CompteRemunere.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

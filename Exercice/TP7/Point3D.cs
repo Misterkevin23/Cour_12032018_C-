@@ -8,8 +8,7 @@ namespace TP7
 {
     class Point3D : Point2D
     {
-        int attZ;
-
+        #region Constructeur
         public Point3D()
         {
         }
@@ -18,7 +17,10 @@ namespace TP7
         {
             this.Z = attZ;
         }
+        #endregion
 
+
+        #region Properties
         private int z;
 
         public int Z
@@ -26,19 +28,21 @@ namespace TP7
             get { return z; }
             set { z = value; }
         }
+        #endregion
 
+        # region Methode
         public override string afficher()
         {
-            return ("[" + X + ", " + Y + ", "+ Z + "]");
+            //return ("[" + X + ", " + Y + ", "+ Z + "]");
+            return (string.Format("Mon Point 3D a pour coordonnées:" + "[{0} , {1}, {2}]", this.X, this.Y, this.Z));
         }
 
         public void translater(int dX, int dY, int dZ)
         {
-            X = X + dX;
-            Y = Y + dY;
+            base.translater(dX, dY);
             Z = Z + dZ;
         }
-
+        #endregion
     }
 
 }
