@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP9
+namespace TP10
 {
     class Client
     {
@@ -57,7 +57,7 @@ namespace TP9
         {
             message = "";
 
-            if(compte.Count() < 5 )
+            if (compte.Count() < 5)
             {
                 compte.Add(unCompte);
                 message = "Compte Ajouté";

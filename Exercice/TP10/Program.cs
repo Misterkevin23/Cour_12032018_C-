@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP9
+namespace TP10
 {
     class Program
     {
@@ -18,13 +18,13 @@ namespace TP9
             Console.WriteLine(message);
             c1.ajouterCompte(new Compte(2, 2300), out message);
             Console.WriteLine(message);
-            c1.ajouterCompte(new CompteRemunere(3, 4200,0.3), out message);
+            c1.ajouterCompte(new CompteRemunere(3, 4200, 0.3), out message);
             Console.WriteLine(message);
-            c1.ajouterCompte(new CompteRemunere(4, 7000, 0.5), out message);
+            c1.ajouterCompte(new CompteASeuilRemunere(4, 7000, 0.5, 300), out message);
             Console.WriteLine(message);
             c1.ajouterCompte(new CompteASeuil(5, 300, 200), out message);
             Console.WriteLine(message);
-            c1.ajouterCompte(new Compte(6, 1700), out message);
+            c1.ajouterCompte(new CompteASeuilRemunere(6, 1700, 0.2, 100), out message);
             Console.WriteLine(message);
 
             Console.WriteLine("Opération d'Ajout sur le Compte 1");
@@ -35,7 +35,7 @@ namespace TP9
 
             Console.WriteLine(c1.ToString());
 
-            Console.WriteLine(c1.getCompte(4) );
+            Console.WriteLine(c1.getCompte(4));
 
             Console.WriteLine("Affichage de la liste des comptes");
             foreach (Compte cpt in c1.compte)
@@ -44,7 +44,7 @@ namespace TP9
             }
 
             Console.WriteLine("Récupération et utilisation du Compte Rémunéré N°5");
-            CompteRemunere cpt2 = c1.getCompte(5) as CompteRemunere; //Lorsque l'on utilise as si il ne trouve pas le type voulu, il renvoi null donc il faut verifier que le champs ne soit pas null avant de lancer la méthode
+            CompteASeuilRemunere cpt2 = c1.getCompte(4) as CompteASeuilRemunere; //Lorsque l'on utilise as si il ne trouve pas le type voulu, il renvoi null donc il faut verifier que le champs ne soit pas null avant de lancer la méthode
 
             if (cpt2 != null)
             {
@@ -59,6 +59,15 @@ namespace TP9
                 Console.WriteLine(cpt3.ToString());
                 cpt3.retirer(600);
                 Console.WriteLine(cpt3.ToString());
+            }
+
+            Console.WriteLine("Récupération et utilisation du Compte A Seuil N° 4");
+            CompteRemunere cpt4 = c1.getCompte(3) as CompteRemunere;
+            if (cpt4 != null)
+            {
+                Console.WriteLine(cpt4.ToString());
+                cpt4.retirer(600);
+                Console.WriteLine(cpt4.ToString());
             }
 
 

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP9
+namespace TP10
 {
-    class CompteRemunere : Compte
+    class CompteRemunere : Compte, ICompteRemunere
     {
 
         #region Contructeur
@@ -15,7 +15,7 @@ namespace TP9
 
         }
 
-        public CompteRemunere(int numeros, double initialSolde, double taux):base(numeros, initialSolde)
+        public CompteRemunere(int numeros, double initialSolde, double taux) : base(numeros, initialSolde)
         {
             this.Taux = taux;
         }
@@ -27,8 +27,9 @@ namespace TP9
         public double Taux
         {
             get { return taux; }
-            private set {
-                if(taux >=0 && taux <=1)
+            set
+            {
+                if (taux >= 0 && taux <= 1)
                 {
                     taux = value;
                 }
@@ -36,7 +37,7 @@ namespace TP9
                 {
                     taux = 0.1;
                 }
-                
+
             }
         }
         #endregion
