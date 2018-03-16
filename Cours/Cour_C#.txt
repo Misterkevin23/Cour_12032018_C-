@@ -32,4 +32,5 @@ developpement web
 *une classe abstraite est une classse qui peut pas etre instenter directement et qui possede au moin une methode abstraite.
 *prop + tab tab permet de generer les geteur et seteur simple
 *propfull + tab tab permet de generer des geteur et seteur complet
+*Pour faire une application web il faut installée asp.NET --> choisir le model MVC
 

@@ -41,7 +41,7 @@ namespace TP10
 
         public override void retirer(double uneValeur)
         {
-            if ((this.Solde - this.Seuil) > this.Seuil)
+            if ((this.Solde - uneValeur) >= this.Seuil)
             {
                 this.Solde = this.Solde - uneValeur;
             }
